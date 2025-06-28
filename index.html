@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea for Expensify</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Courier Prime', monospace;
+      background-color: #ffffff;
+      color: #000;
+      margin: 0;
+      cursor: default;
+    }
+    header {
+      background-color: #9CAF88;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 280px;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+    }
+    .main {
+      flex: 1;
+      background-color: #fdfdfd;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    h2 {
+      background-color: #f2e4c6;
+      color: black;
+      padding: 4px;
+      font-size: 16px;
+    }
+    .blurbs p {
+      margin: 10px 0;
+    }
+    ul.links li {
+      margin-bottom: 6px;
+    }
+    .fake-links a {
+      color: #0033cc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 20px;
+    }
+    .profile-pic {
+      width: 100%;
+      border: 1px solid #999;
+    }
+    .trail {
+      position: fixed;
+      width: 16px;
+      height: 16px;
+      background: transparent;
+      pointer-events: none;
+      animation: fadeOut 1s forwards;
+    }
+    .trail::after {
+      content: '★';
+      display: block;
+      font-size: 16px;
+      color: hotpink;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+    }
+    .contact-icons img {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .qna-scroll {
+      max-height: 300px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="display: inline-block; animation: scrollText 12s linear infinite;">
+      Welcome to Andrea's Expensify Application
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Andrea Vilchez-Osorio</h2>
+      <img src="images/pixel-cat.png" class="profile-pic" alt="Andrea's Profile Pic" />
+      <p><strong>"Always here to help :)"</strong></p>
+      <p>📍 San Mateo, CA</p>
+      <div class="contact-icons">
+        <p><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email icon"><a href="mailto:avilchez83192@gmail.com">Send Message</a></p>
+        <p><img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Network icon"><a href="https://www.linkedin.com/in/andrea-vilchez-osorio/" target="_blank">Add to Network</a></p>
+      </div>
+      <h2>Contact Info</h2>
+      <ul class="links">
+        <li>Resume: <a href="resume.pdf" target="_blank">View PDF</a></li>
+        <li>Email: <a href="mailto:avilchez83192@gmail.com">avilchez83192@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/andrea-vilchez-osorio/" target="_blank">linkedin.com/in/andrea-vilchez-osorio</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>Customer Experience Generalist at Expensify</h2>
+
+      <h2 class="blurbs">About Me</h2>
+      <div class="blurbs">
+  <p>I’m a lifelong customer experience enthusiast, starting as a teen in retail and eventually managing the integration of CX tools and systems at Dropbox. Whether it was handling compliance cases for fintech users at Affirm or analyzing support trends for Tile customers, I’ve always loved making tech feel more human. I lead with empathy, solve with curiosity, and bring clarity to chaos.</p>
+</div>
+
+      <h2>Expensify Application Q & A</h2>
+      <div class="qna-scroll">
+        <div class="qa-entry">
+          <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong style="font-weight: 800;">Are you currently located in San Francisco CA or Portland OR?</strong></p>
+          <p>I’m based in the bay area, San Mateo, within commuting distance of San Francisco.</p>
+        </div>
+
+        <div class="qa-entry">
+  <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong>When did you first start supporting customers, and what have you been doing since then?</strong></p>
+          <p>My journey in customer support began as a teenager working at Target. From there, I found myself naturally drawn to client-facing roles, whether it was at Whole Foods, or during my first startup internship at Verlocal, a true early-stage company where we worked out of a house, used our personal laptops, and wore many hats to support both vendors and customers.</p>
+          <p>Eventually, I joined Google Express (now sunsetted) as a site lead, which set the stage for my next chapter at Tile. There, I learned the ins and outs of tech support for hardware tracking devices and developed a strong understanding of performance metrics tied to our growing subscription services.</p>
+          <p>After Tile, I moved into fintech, joining Affirm as a support advocate. This role pushed me to develop an even deeper sense of empathy. Many of the customers we worked with faced credit reporting issues that had real consequences on their lives. We handled highly escalated cases via phone and email, navigated compliance requirements, and responded to inquiries from the Better Business Bureau.</p>
+          <p>Through networking, I found my next opportunity at DocSend, a niche SaaS startup supporting VCs and startups in their fundraising journeys. This was where I got to lean into one of my biggest passions: training. I quickly became a subject matter expert, created documentation for internal processes, and implemented a knowledge management system to break down information silos. I also built and led a Help Center management team that worked cross-functionally with Product, Legal, and Engineering to ensure we were launch-ready, with customer-facing articles and agent-facing macros prepared before every release.</p>
+          <p>When DocSend was acquired by Dropbox, I stayed on as a senior product support specialist and took on the additional role of managing the DocSend Help Center. As part of the integration effort, I stepped into a newly created role focused on merging DocSend’s customer support tooling with Dropbox’s systems. This meant leading a major cross-functional initiative where engineers from both companies collaborated, many for the first time.</p>
+          <p>After completing that project, I took on one of my most complex challenges yet: leading the transition of Dropbox’s entire customer experience chat platform to a new tool. This was a massive effort due to all the behind-the-scenes complexity, different support tiers, experiments, and customer variants that had evolved over time.</p>
+          <p>Through all of this, I’ve worn many hats, and I’ve learned a lot. But the biggest takeaway is that I genuinely love helping people, whether it's customers or colleagues. I’m driven by curiosity, collaboration, and the challenge of solving problems thoughtfully and thoroughly.</p>
+        </div>
+        <div class="qa-entry">
+  <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong>What is your proudest customer success story from your career so far?</strong></p>
+    <p>I love this question! There have been so many memorable customer interactions, but one in particular stands out.</p>
+<p>An older gentleman had recently started using DocSend and frequently reached out via email, chat, and even phone calls with questions about our Spaces feature. In fact, every single person on the support team had interacted with him at some point, including me. Spaces was evolving rapidly at the time, with frequent updates and enhancements, and one day he called in extremely frustrated because the feature had changed again.</p>
+<p>Trying to explain the new workflows over the phone was difficult. The steps to complete familiar actions had shifted, and several new flows had been introduced. He was so overwhelmed that he threatened to cancel his subscription and leave negative reviews across our social channels. While his tone was intense, I saw an opportunity to turn the experience around. Navigating a constantly changing product can be especially tough for someone still getting comfortable with the platform.</p>
+<p>So I offered to hop on a Zoom call with him. I walked him through the updated Spaces experience, explained why things had changed, and showed him how to navigate it with confidence. That conversation not only helped him, but helped me realize our Help Center article was lacking. It needed clear visual walkthroughs and a more detailed breakdown of the new functionality. I worked with the team to update the article, created a macro to explain the changes more easily, and that experience is actually what sparked my involvement in launch readiness.</p>
+<p>From that point forward, I began managing updates to macros and Help Center content and joined regular product syncs to ensure support resources were ready, tested, and aligned at launch.</p>
+<p>Long story short, he didn’t cancel. In fact, he stuck with DocSend and continued to check in from time to time with a much better grasp of the product. His frustration, while difficult in the moment, gave us valuable insight into how to better support our users in a more holistic and proactive way.</p></div>
+<div class="qa-entry">
+  <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong>Can you describe a time when you dealt with a particularly complex customer situation? What were the challenges involved, and what specific actions did you take to achieve a positive resolution?</strong></p>
+  <p>One of the more complex situations I’ve handled was technical in a way that wasn’t immediately obvious, and it impacted several customers. A handful of users suddenly couldn’t access the DocSend site due to an SSL certificate error, which, of course, made the product completely unusable. We followed our usual escalation process: flagged it to Engineering and Product, gathered browser and device details, asked about VPNs, you name it. But after three or four weeks of working with our EPD team and even our COO, we still didn’t have answers.</p>
+  <p>At that point, I decided to zoom out and ask questions that weren’t part of our standard flow. Things like: who is your internet provider? What kind of setup are you running at home or in the office? That’s when something clicked. Many of these users were using mesh networks. The brands were different, but the pattern was there.</p>
+  <p>I started reviewing screenshots of their router settings and did a ton of digging online. Eventually, I found the issue: an advanced security feature on some mesh networks was blocking access to docsend.com. I asked the customers to try disabling that setting just to test, and boom, they were back in.</p>
+  <p>Of course, asking users to turn off security features isn’t a long term fix, so we contacted those mesh network providers directly and requested that our domain be whitelisted moving forward.</p>
+  <p>Throughout the whole thing, I made sure our customers felt taken care of. I sent updates twice a week so they knew we were still on it and hadn’t forgotten about them, because that’s honestly the worst feeling. We also issued refunds for the time they couldn’t access the product.</p>
+  <p>In the end, we resolved the issue and made sure the learning wasn’t lost. I updated our macros and troubleshooting steps to include more targeted network questions so the team would know exactly where to look if this ever came up again.</p>
+  <p>What this experience taught me is that solving complex issues often requires thinking beyond the usual playbook. It’s about asking the right questions, even if they’re not the standard ones, and staying curious until something clicks.</p>
+<div class="qa-entry">
+  <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong>What do you want to do with the rest of your life, and how is Expensify a step toward your long-term goals?</strong></p>
+  <p>In the short term, I’m really focused on mastering e-learning and learning experience design. I love being able to share knowledge in a way that actually sticks, whether it’s for internal teams or customers, and I want to make content that feels clear, helpful, and human. I’ve already started taking online courses and I’m diving into free resources to teach myself how to really get good at it.</p>
+<p>Long term (and honestly short term too), I want to grow into a CX leader who knows how to bridge the gap between human support and AI. With how fast AI is being integrated into everything, I think it’s more important than ever to hold onto the human side of the customer experience. It’s not just about efficiency, it’s about connection.</p>
+<p>What really draws me to Expensify is how much your manifesto aligns with that mindset. I love that you care about who people are and how they work together. It’s not just about individual talent, but about how teams collaborate to build something exceptional. One moment that really stood out to me was when you paused a product launch during the height of COVID, even after all the work that went into it. That kind of decision takes empathy, self awareness, and a willingness to put people first, and that’s the kind of team I want to be a part of.</p>
+</div>
+
+<div class="qa-entry">
+  <p style="border-left: 4px solid #9CAF88; padding-left: 8px;"><strong>How did you hear about us? A job posting? Chalk on a sidewalk? From a friend? Let us know where you saw this opening.</strong></p>
+  <p>LinkedIn!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>© 2025 Andrea Vilchez Osorio – powered by HTML, vibes, and curiosity</footer>
+</body>
+</html>
